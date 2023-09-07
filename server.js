@@ -6,8 +6,8 @@ const path = require('path')
 const { logger, logEvents } = require('./middleware/logger')
 const errorHandler = require('./middleware/errorHandler')
 const cookieParser = require('cookie-parser')
-// const cors = require('cors')
-// const corsOptions = require('./config/corsOptions')
+const cors = require('cors')
+const corsOptions = require('./config/corsOptions')
 const connectDB = require('./config/dbConn')
 const mongoose = require('mongoose')
 const PORT = process.env.PORT || 3500
@@ -18,14 +18,7 @@ connectDB()
 
 app.use(logger)
 
-// app.use(cors(corsOptions))
-app.use((req, res, next) => {
-    // Remove the Access-Control-Allow-Origin header
-    res.removeHeader('Access-Control-Allow-Origin');
-    
-    // Proceed to the next middleware or route
-    next();
-  });
+app.use(cors(corsOptions))
 
 app.use(express.json())
 
