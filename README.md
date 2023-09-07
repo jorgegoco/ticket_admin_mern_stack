@@ -20,9 +20,11 @@
 - [📝 License](#license)
 
 
-# 📖 ticketAdmin <a name="about-project"></a>
+# 📖 ticketAdmin back-end API <a name="about-project"></a>
 
 **ticketAdmin** is a webpage where a company can manage tickets among their employees.
+
+[front-end link](https://github.com/jorgegoco/ticket_admin_mern_stack_frontend)
 
 ## 🛠 Built With <a name="built-with"></a>
 
