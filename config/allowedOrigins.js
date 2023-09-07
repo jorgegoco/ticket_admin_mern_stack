@@ -1,5 +1,5 @@
 const allowedOrigins = [
-  'https://www.ticketadmin.onrender.com'
+  'https://ticketadmin.onrender.com'
 ]
 
 module.exports = allowedOrigins;
